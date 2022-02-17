@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header >
+        <h1 class="text-5xl	text-center	mt-8"> Money Calculate Master </h1>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="sm:grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div>
+                    <img  src="images/mane.jpg" class="rounded img-fluid" alt="">
+                </div>
+                <div class="bg-red-200 rounded">
+
+                     <!-- Income -->
+
+                    <h3 class="text-2xl	text-center	">Income </h3>
+                    <div class=" mx-12">
+                        Income: <input id="income" class="border bg-red-300   rounded border-gray-100 w-2/4 mb-4 px-2" type="text " placeholder="">
+                    </div>
+
+                    <!-- Expenses -->
+
+                    <h3 class="text-2xl	text-center	">Expenses </h3>
+                    <div class=" mx-12">
+                     <div> Food: <input id="food" class="border bg-red-300 rounded border-gray-100 w-2/4 mb-4 px-2" type="text " placeholder=""></div>
+                    <div> Rent:  <input id="rent" class="border  bg-red-300  rounded border-gray-100 w-2/4 mb-4 px-2" type="text " placeholder=""></div>
+                    <div> Clothes: <input id="clothes" class="border  bg-red-300  rounded border-gray-100 w-2/4 mb-4 px-2" type="text " placeholder=""></div>
+                    </div>
+                    <button id="login-submit"  class="bg-yellow-600 mx-12 px-4 rounded py-2 text-white font-medium">Calculate</button>
+
+                    <!-- Total Expenses and Balance -->
+
+                    <div class=" mx-12">
+                       <div> Total Expenses:   <input id="Total-Expenses" class="   bg-red-200 w-2/4 mb-4 px-2" type="text " placeholder=""></div>
+                        <div>Balance:  <input id="Balance" class="  bg-red-200 w-2/4 mb-4 px-2" type="text " placeholder=""></div>
+                    </div>
+                    <div class=" mx-12">
+                        Save: <input id="Save" class="border bg-red-300  rounded border-gray-100 w-2/4 mb-4 px-2" type="text " placeholder="">
+                        %  <button id="Save-button" class="bg-yellow-600 px-4 rounded py-2 text-white font-medium">Save</button>
+                    </div>
+
+                     <!-- Saving Amount and Remaining Balance -->
+
+                    <div class=" mx-12">
+                        <div>Saving Amount:  <input id="Saving-Amount" class="  bg-red-200 w-2/4 mb-4 px-2" type="text " placeholder=""></div>
+                       <div> Remaining Balance:  <input id="Remaining-Balance" class="  bg-red-200 w-2/4 mb-4 px-2" type="text " placeholder=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
